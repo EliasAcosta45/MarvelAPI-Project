@@ -1,0 +1,78 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .header-container {
+    background-image: url('https://cdn.marvel.com/content/1x/characters_art_mas_dsk_01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .container {
+    z-index: 1;
+    position: relative;
+  }
+  
+  #character-list .card {
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia del 60% */
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 5px; /* Reducido el padding para menos altura */
+  }
+  
+  .pagination .page-item .page-link {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+  }
+  
+  .pagination .page-item:hover .page-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .pagination .page-link {
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+
+  .character-link {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5px 10px; /* Ajusta el padding según sea necesario */
+    margin: 0 5px;
+    transition: background-color 0.3s; /* Transición suave */
+  }
+  
+  .character-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
