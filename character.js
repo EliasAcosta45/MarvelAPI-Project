@@ -35,7 +35,7 @@ function renderCharacterDetails(character) {
       </div>
       <div class="col-md-8">
         <h1 class="text-light">${character.name}</h1>
-        <p class="text-light">${character.description}</p>
+        <p id="Description-Character" class="text-light">${character.description}</p>
         <h3 class="text-light">Informacion Adicional:</h3>
         <p class="text-light">Comics: ${character.comics.available}</p>
         <p class="text-light">Series: ${character.series.available}</p>
@@ -45,7 +45,6 @@ function renderCharacterDetails(character) {
     </div>
   `);
 }
-
 async function loadCharacterDetails(characterId) {
   const character = await fetchCharacterDetails(characterId);
   renderCharacterDetails(character);
@@ -54,3 +53,4 @@ async function loadCharacterDetails(characterId) {
 if (characterId) {
   loadCharacterDetails(characterId);
 }
+

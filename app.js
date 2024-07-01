@@ -38,8 +38,8 @@ function renderCharacters(characters) {
   characters.forEach(character => {
     characterList.append(`
       <div class="col-md-3 mb-4">
-        <div class="card bg-dark">
-          <img src="${character.thumbnail.path}.${character.thumbnail.extension}" class="card-img-top" alt="${character.name}">
+        <div class="card bg-dark card-div">
+          <img src="${character.thumbnail.path}.${character.thumbnail.extension}" class="card-img-top card-ch" alt="${character.name}">
           <div class="card-body">
             <h5 class="card-title text-light">${character.name}</h5>
             <a href="character.html?id=${character.id}" class="btn btn-primary">View Details</a>

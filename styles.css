@@ -4,10 +4,6 @@ html, body {
   }
   
   .header-container {
-    background-image: url('https://cdn.marvel.com/content/1x/characters_art_mas_dsk_01.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -21,12 +17,22 @@ html, body {
     width: 100%;
     padding: 20px 0;
   }
+  .overlay-card {
+    background: rgba(0, 0, 0, 0.3);
+  }
   
   .container {
     z-index: 1;
     position: relative;
   }
-  
+
+  .cocontainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://tse4.mm.bing.net/th?id=OIG2.dslR025uf9jrSB67vg.I&pid=ImgGn');
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+
   #character-list .card {
     margin: 15px;
     background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia del 60% */
@@ -75,4 +81,15 @@ html, body {
   .character-link:hover {
     background: rgba(255, 255, 255, 0.1);
   }
-  
+  .card-ch{
+    height: 200px;
+  }
+  .card-div{
+    height: 350px;
+  }
+
+.goog-te-banner-frame,.custom-translate {
+        display: none;
+}
+
+
